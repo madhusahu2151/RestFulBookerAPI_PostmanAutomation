@@ -4,7 +4,7 @@ pipeline {
     tools {
         // This is the MAGIC part. It adds 'npm' and 'node' to your PATH.
         // Ensure this name matches the name in Manage Jenkins > Tools
-        nodejs 'NodeJS_22' 
+        nodejs 'NodeJS_25.6.0' 
     }
 
     stages {
