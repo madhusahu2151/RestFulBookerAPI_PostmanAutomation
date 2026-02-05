@@ -1,3 +1,3 @@
 #!/bin/bash
 
-newman run RestFulBooker.postman_collection.json -e environments/qa.json -r htmlextra --reporter-htmlextra-showEnvironmentData
+newman run collections/RestFulBooker.postman_collection.json -e environments/qa.json -r htmlextra --reporter-htmlextra-showEnvironmentData
