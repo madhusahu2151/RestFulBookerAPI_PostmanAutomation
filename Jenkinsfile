@@ -1,6 +1,12 @@
 pipeline {
     agent any
 
+    tools {
+        // This is the MAGIC part. It adds 'npm' and 'node' to your PATH.
+        // Ensure this name matches the name in Manage Jenkins > Tools
+        nodejs 'NodeJS_22' 
+    }
+
     stages {
         stage('Install Newman') {
             steps {
